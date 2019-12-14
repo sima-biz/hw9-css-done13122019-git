@@ -83,10 +83,17 @@ body {
     transform: rotateY(3600deg);
   }
 
-  .item1 {
-    position: absolute;
-    margin: -175px;
-    transition: 4s;
+  .item1::before {
+    width: 100px;
+    height: 50px;
+    opacity: 0;
+    position: relative;
+  }
+
+ .item1:hover {
+    position: relative;
+    transition:  4s;
+    transform: translateX(-125px);
   }
 } 
 
